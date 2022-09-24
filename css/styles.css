@@ -1,0 +1,205 @@
+/* para ambos archivos */
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Raleway:wght@100&display=swap");
+body .formulario .boton input {
+  border-color: #bbb1b1;
+  color: black;
+  font-weight: bolder;
+  font-size: 18px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*STYLE INDEX*/
+body {
+  background-color: whitesmoke;
+  /*header*/
+  /*main*/
+  /*section*/
+  /*tasaciones*/
+  /*contacto*/
+  /*footer*/ }
+  body header {
+    padding: 10px;
+    border-bottom: 1px solid #D39A89;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(4px); }
+    body header div .logo {
+      height: 65px;
+      margin-left: 50px; }
+    body header div nav div div .menu {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-family: "Raleway", sans-serif;
+      font-weight: bolder;
+      text-shadow: 0.5px 0.5px 0.5px grey;
+      /*animacion menu*/ }
+      body header div nav div div .menu li:hover {
+        transform: scale(0.9);
+        background-color: #D39A89;
+        border-radius: 10px;
+        color: whitesmoke; }
+        body header div nav div div .menu li:hover a:hover {
+          color: whitesmoke; }
+  body .principal {
+    background-image: url("https://www.fodors.com/wp-content/uploads/2022/03/Hero-UltimateNYC-shutterstock_327064844.jpg");
+    background-size: cover;
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-position-y: 10px; }
+    @media screen and (max-width: 768px) {
+      body .principal {
+        background-size: auto;
+        height: 110vh; } }
+    body .principal .textoPrincipal h1 {
+      font-weight: bolder;
+      text-shadow: 3px 3px 4px #888686;
+      text-transform: uppercase;
+      letter-spacing: 7px;
+      margin-left: 50px;
+      padding-top: 80px;
+      font-size: 40px;
+      text-shadow: 3px 3px 4px #888686;
+      font-family: "Raleway", sans-serif;
+      color: #363535; }
+      @media screen and (max-width: 768px) {
+        body .principal .textoPrincipal h1 {
+          font-size: 36px;
+          margin-left: 50px;
+          padding-top: 200px; } }
+    body .principal .textoPrincipal p {
+      font-size: 22px;
+      font-weight: bolder;
+      background-color: rgba(112, 109, 109, 0.3);
+      font-family: "Raleway", sans-serif;
+      line-height: 30px;
+      margin: 30px 450px 0 50px;
+      color: #363535;
+      padding: 10px; }
+      @media screen and (max-width: 768px) {
+        body .principal .textoPrincipal p {
+          font-size: 18px;
+          margin: 30px 80px 0 50px; } }
+  body .introduccion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    column-gap: 10px; }
+    body .introduccion .cuadro1 {
+      font-size: 18px;
+      font-weight: bold;
+      font-family: "Raleway", sans-serif;
+      margin: 20px 25px 20px 50px;
+      line-height: 30px;
+      text-align: center;
+      background-color: rgba(112, 109, 109, 0.3); }
+    body .introduccion .cuadro2 {
+      font-size: 18px;
+      font-weight: bold;
+      font-family: "Raleway", sans-serif;
+      margin: 20px 50px 20px 25px;
+      line-height: 30px;
+      color: #363535;
+      text-align: center;
+      background-color: rgba(112, 109, 109, 0.3); }
+  body .estiloimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    height: 100vh; }
+    body .estiloimg .v1 {
+      height: 300px;
+      padding: 30px; }
+    body .estiloimg .v2 {
+      height: 300px;
+      padding: 30px; }
+    body .estiloimg .v3 {
+      height: 300px;
+      padding: 30px; }
+    body .estiloimg .v4 {
+      height: 300px;
+      padding: 30px; }
+    body .estiloimg .v5 {
+      height: 300px;
+      padding: 30px; }
+    body .estiloimg .v6 {
+      height: 300px;
+      padding: 30px; }
+  body .estiloalq {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    height: 100vh; }
+    body .estiloalq .a1 {
+      height: 300px;
+      padding: 30px; }
+    body .estiloalq .a2 {
+      height: 300px;
+      padding: 30px; }
+    body .estiloalq .a3 {
+      height: 300px;
+      padding: 30px; }
+    body .estiloalq .a4 {
+      height: 300px;
+      padding: 30px; }
+    body .estiloalq .a5 {
+      height: 300px;
+      padding: 30px; }
+    body .estiloalq .a6 {
+      height: 300px;
+      padding: 30px; }
+  body .m-tas .t1 {
+    background-size: cover;
+    height: 113vh;
+    background-repeat: no-repeat;
+    background-position-y: 10px; }
+  body .m-tas p {
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: rgba(112, 109, 109, 0.3);
+    font-family: "Raleway", sans-serif;
+    line-height: 30px;
+    margin: 30px 50px 0 50px;
+    color: #363535;
+    padding: 10px; }
+  body .mapa {
+    width: 100%; }
+  body .formulario {
+    margin: 20px 0 20px 50px; }
+    body .formulario legend {
+      font-size: 22px;
+      font-family: "Raleway", sans-serif;
+      font-weight: bold;
+      text-shadow: gray 1px 0; }
+    body .formulario div {
+      padding-bottom: 5px;
+      font-size: 18px;
+      font-family: "Raleway", sans-serif;
+      font-weight: bold; }
+    body .formulario .boton input:hover {
+      transform: scale(0.9);
+      background-color: #D39A89;
+      color: whitesmoke; }
+  body .footer {
+    background-color: #D39A89;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px; }
+    @media screen and (max-width: 768px) {
+      body .footer div div .logos-footer {
+        text-align: center; } }
+    body .footer div div .logos-footer a .logo-footer {
+      height: 65px;
+      margin: 20px 0 20px 0; }
+    body .footer div div .logos-footer div .logoredes {
+      height: 30px;
+      margin: 2px; }
+    body .footer .copy {
+      font-size: 12px; }

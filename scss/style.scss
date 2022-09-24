@@ -1,0 +1,280 @@
+//linea de comentario
+/* para ambos archivos */
+
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Raleway:wght@100&display=swap');
+
+@import "base/variables";
+@import "base/mapas";
+@import "base/listas";
+@import "base/mixin";
+@import "base/extend";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//NESTING
+
+/*STYLE INDEX*/
+
+body{
+    background-color: whitesmoke;
+/*header*/
+    header{
+        padding: 10px;
+        border-bottom: 1px solid $color-principal;
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(4px);
+        div{
+            .logo{
+                height: 65px;
+                margin-left: 50px; 
+            }
+            nav{
+                div{
+                    div{
+                        .menu{
+                            font-size: nth($tamaño-fuente,3);
+                            text-transform: uppercase;
+                            font-family: $tipografia;
+                            font-weight: bolder;
+                            text-shadow: 0.5px 0.5px 0.5px grey;
+                            /*animacion menu*/
+                            li:hover{
+                                transform: scale(0.9);
+                                background-color: $color-principal;
+                                border-radius: 10px;
+                                color: whitesmoke;
+                                a:hover{
+                                    color: whitesmoke;
+                                }
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+    
+/*main*/
+    .principal{
+        background-image: url("https://www.fodors.com/wp-content/uploads/2022/03/Hero-UltimateNYC-shutterstock_327064844.jpg");
+        background-size: cover;
+        height: 120vh;
+        background-repeat: no-repeat;
+        background-position-y: 10px;
+        @include media-up (md){
+            background-size: auto;
+            height: 110vh;
+    }
+        .textoPrincipal{
+            h1{
+                @include estilo-tituloprincipal;
+                font-size: nth($tamaño-fuente,6);
+                text-shadow: 3px 3px 4px rgb(136, 134, 134);
+                font-family: $tipografia;
+                color: $color-tipografia-n;
+                @include media-up (md){
+                    font-size: 36px;
+                    margin-left: 50px;
+                    padding-top: 200px;
+            }
+            }
+            p{
+                font-size: nth($tamaño-fuente,5);
+                font-weight: bolder;                
+                background-color: $color-transparente;
+                font-family: $tipografia;        
+                line-height: 30px;
+                margin: 30px 450px 0 50px;
+                color: $color-tipografia-n;
+                padding: 10px;
+                @include media-up (md){
+                    font-size: 18px;
+                    margin: 30px 80px 0 50px;
+            }
+            }
+        }
+    }
+    
+/*section*/
+    .introduccion{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        column-gap: 10px;          
+        
+           
+        .cuadro1{
+        font-size: nth($tamaño-fuente,4);
+        font-weight: bold;
+        font-family: $tipografia;
+        margin: 20px 25px 20px 50px;
+        line-height: 30px;        
+        text-align: center;
+        background-color: $color-transparente;        
+        }
+
+        .cuadro2{
+            font-size: nth($tamaño-fuente,4);
+            font-weight: bold;
+            font-family: $tipografia;
+            margin: 20px 50px 20px 25px;
+            line-height: 30px;
+            color: $color-tipografia-n;
+            text-align: center;
+            background-color: $color-transparente;
+
+        }                          
+    }
+    
+    .estiloimg{        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        row-gap: 10px;
+        column-gap: 10px;
+        height: 100vh;
+        
+
+    .v1{
+        
+        @include estilo-fotos;
+    }
+    .v2{
+        @include estilo-fotos;
+    }
+    .v3{
+        @include estilo-fotos;
+    }
+    .v4{
+        @include estilo-fotos;
+    }
+    .v5{
+        @include estilo-fotos;
+    }
+    .v6{
+        @include estilo-fotos;
+    }
+
+    }
+    .estiloalq{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        row-gap: 10px;
+        column-gap: 10px;
+        height: 100vh;
+        .a1{
+            @include estilo-fotos;
+        }
+        .a2{
+            @include estilo-fotos;
+        }
+        .a3{
+            @include estilo-fotos;
+        }
+        .a4{
+            @include estilo-fotos;
+        }
+        .a5{
+            @include estilo-fotos;
+        }
+        .a6{
+            @include estilo-fotos;
+        }
+        }
+        
+/*tasaciones*/
+.m-tas{
+    .t1{    
+        background-size: cover;
+        height: 113vh;
+        background-repeat: no-repeat;
+        background-position-y: 10px;
+   }
+    p{
+        font-size: nth($tamaño-fuente,4);
+        font-weight: bolder;                
+        background-color: $color-transparente;
+        font-family: $tipografia;        
+        line-height: 30px;
+        margin: 30px 50px 0 50px;
+        color: $color-tipografia-n;
+        padding: 10px;
+
+    }
+
+}
+
+/*contacto*/
+.mapa{
+    width: 100%;
+}
+.formulario{
+    margin: 20px 0 20px 50px;
+    legend{
+        font-size: nth($tamaño-fuente,5);
+        font-family: $tipografia;
+        font-weight: bold;
+        text-shadow: gray 1px 0;
+    }
+    div{
+        padding-bottom: 5px;
+        font-size: nth($tamaño-fuente,4);
+        font-family: $tipografia;
+        font-weight: bold;      
+    }
+    .boton{
+        input{ 
+            @extend %boton;
+    }
+    // animacion boton
+    input:hover{
+        transform: scale(0.9);
+        background-color: #D39A89;
+        color: whitesmoke;
+    }
+}
+}
+
+
+
+/*footer*/
+    .footer{
+        background-color: $color-principal;
+        font-family: $tipografia;
+        font-size: nth($tamaño-fuente,2);
+        div{
+            div{
+                .logos-footer{
+                    @include media-up (md){
+                        text-align: center;
+                    }
+                    a{
+                        .logo-footer{
+                            height: 65px;
+                            margin: 20px 0 20px 0;
+                        }
+                    }
+                    div{
+                        .logoredes{
+                            height: 30px;
+                            margin: 2px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .copy{
+            font-size: nth($tamaño-fuente,1);
+        }
+    }
+}

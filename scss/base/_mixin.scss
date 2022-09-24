@@ -1,0 +1,31 @@
+// mixin con parametros
+
+@mixin medidas($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin estilo-tituloprincipal{
+                font-weight: bolder;
+                text-shadow:  3px 3px 4px rgb(136, 134, 134);
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                margin-left: 50px;
+                padding-top: 80px;
+}
+@mixin estilo-fotos {
+    height: 300px;
+    padding: 30px;
+}
+
+$breakpoints:(
+    sm: 540px,
+    md: 768px,
+    lg: 1024px,
+);
+
+@mixin media-up ($breakpoint) {
+    @media screen and (max-width: map-get( $breakpoints, $breakpoint)) {
+        @content;
+    }
+}
